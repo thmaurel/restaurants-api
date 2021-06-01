@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :restaurants
   has_many :comments
+
+  acts_as_token_authenticatable
 end

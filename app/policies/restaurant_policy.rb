@@ -4,4 +4,20 @@ class RestaurantPolicy < ApplicationPolicy
       scope.all
     end
   end
+
+  def show?
+    true
+  end
+
+  def update?
+    record.user == user
+  end
+
+  def create?
+    update?
+  end
+
+  def destroy?
+    update?
+  end
 end

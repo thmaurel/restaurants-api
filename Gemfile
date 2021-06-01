@@ -34,6 +34,9 @@ gem 'devise'
 # Authorizations
 gem 'pundit'
 
+# Generating tokens for user
+gem 'simple_token_authentication'
+
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
